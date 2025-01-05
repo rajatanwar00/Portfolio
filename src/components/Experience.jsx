@@ -1,6 +1,7 @@
 import React from 'react'
 import Edukit2 from '../assets/Edukit2.png';
 import NSUT from '../assets/NSUT.png'
+import { easeInOut, motion } from "framer-motion";
 
 function Experience() {
   return (
@@ -13,8 +14,17 @@ function Experience() {
             <div className='w-1/2 '>
 
                 <div className='flex'>
-                    <img src={Edukit2} className='size-60'></img>
-                    <div className='flex flex-col'>
+                    <motion.img src={Edukit2} className='size-60' 
+                        initial={{ y: 200 , opacity:0}}
+                        whileInView={{ y: 0 , opacity:1}}
+                        transition={{ duration: 1, delay:0 }}
+                        >
+                    </motion.img>
+                    <motion.div className='flex flex-col'
+                        initial={{ y: 200 , opacity:0}}
+                        whileInView={{ y: 0 , opacity:1}}
+                        transition={{ duration: 1, delay:0 }}
+                        >
                         <p className='p-1 text-2xl font-semibold'>
                             Edukit
                         </p>
@@ -33,12 +43,21 @@ function Experience() {
                             <div className='p-1 border text-gray-400 border-cyan-700 rounded-md shadow-lg shadow-slate-800'>Sails.js</div>
                             <div className='p-1 border text-gray-400 border-cyan-700 rounded-md shadow-lg shadow-slate-800'>MongoDB</div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
                 <div className='flex'>
-                    <img src={NSUT} className='size-60'></img>
-                    <div className='flex flex-col'>
+                    <motion.img src={NSUT} className='size-60'
+                        initial={{ y: 200 , opacity:0}}
+                        whileInView={{ y: 0 , opacity:1}}
+                        transition={{ duration: 1, delay:0.5 }}
+                        >
+                    </motion.img>
+                    <motion.div className='flex flex-col'
+                        initial={{ y: 200 , opacity:0}}
+                        whileInView={{ y: 0 , opacity:1}}
+                        transition={{ duration: 1, delay:0.5 }}
+                        >
                         <p className='p-1 text-2xl font-semibold'>
                             Netaji Subhas University of Technology, Delhi
                         </p>
@@ -47,7 +66,7 @@ function Experience() {
                             Bachelor of Technology, Computer Science Engineering<br></br>
                             (Aug,2021 - May,2025)
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

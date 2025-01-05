@@ -17,10 +17,10 @@ function Carousel({slides}) {
                         </img>
 
                         <div className='absolute inset-0 flex items-center justify-between p-4'>
-                            <button onClick={prev} className='bg-white/80 text-gray-800 shadow-md rounded-full p-1 hover:bg-white'>
+                            <button onClick={prev} className='bg-sky-400 text-white shadow-md rounded-full p-1 opacity-60 hover:bg-sky-600 hover:opacity-100'>
                                 <BiChevronLeft size={20}/>
                             </button>
-                            <button onClick={next} className='bg-white/80 text-gray-800 shadow-md rounded-full p-1 hover:bg-white'>
+                            <button onClick={next} className='bg-sky-400 text-white shadow-md rounded-full p-1 opacity-60 hover:bg-sky-600 hover:opacity-100'>
                                 <BiChevronRight size={20}/>
                             </button>
                         </div> 
