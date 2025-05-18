@@ -2,7 +2,15 @@ import TaskApp from './TaskApp.png'
 import Amazon from './Amazon.png'
 import Weather from './Weather.png'
 import BookStore from './BookStore.png'
+import Chat from './Chat.png'
 
+
+const chatApp={
+    title: "Chat Application",
+    link: 'https://chat-app-frontend-ten-gray.vercel.app/',
+    image: Chat,
+    description: 'Created a chat application using web-sockets and integrated google sso for user authenticity'
+}
 
 const TaskAppProject={
     title: "Task App",
@@ -32,4 +40,4 @@ const WeatherProject={
     description: 'Loads latest weather data from third party services with an easy to use UI.'
 }
 
-export const ProjectList=[TaskAppProject,BookStoreProject,AmazonProject,WeatherProject]
+export const ProjectList=[chatApp,TaskAppProject,BookStoreProject,AmazonProject,WeatherProject]
